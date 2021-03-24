@@ -1,13 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header(props) {
     return (
         <div className='headerDiv'>
             <ul>
-                <Link to='/'>Home</Link>
-                <Link to='/login'>Login</Link>
-                <Link to='/protected'>Friends</Link>
+                <NavLink to='/home' activeStyle={{
+                    fontWeight: "bold",
+                    color: "#1098F7"
+                    }}>Home</NavLink>
+                <NavLink to='/login' activeStyle={{
+                    fontWeight: "bold",
+                    color: "#1098F7"
+                    }}>Login</NavLink>
+                <NavLink to='/protected' activeStyle={{
+                    fontWeight: "bold",
+                    color: "#1098F7"
+                    }}>Friends</NavLink>
+                <NavLink to='/newFriend' activeStyle={{
+                    fontWeight: "bold",
+                    color: "#1098F7"
+                    }}>NewFriend</NavLink>
             </ul>
         </div>
     );

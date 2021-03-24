@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Prompt|Roboto');
 
-
-
 *{
   box-sizing: border-box;
 }
@@ -48,13 +46,8 @@ a {
 .home-image h1{
   display: inline-block;
   color: white;
-  margin-top: 15rem;
-}
-
-.friends-image{ 
-  background-image: url('https://images.pexels.com/photos/5515956/pexels-photo-5515956.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-  background-size: cover;
-  height: 100%;
+  margin-top: 12rem;
+  font-size: 6rem;
 }
 
 /*Header Component */
@@ -62,20 +55,89 @@ a {
   background-color: #92c8cc;
 }
 
+/*Login Component */
 .loginDiv{
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(162, 132, 218, 1);
   padding: 10rem 15rem;
-  margin: 0 25rem;
   color: white;
+  height: 95vh;
+}
+
+.loginDiv h1{
+  font-size: 3rem;
+}
+
+.form{
+  margin: 0px 5rem;
+  background: rgb(0,0,0, 0.5);
+  padding: 3rem;
+  height: 65%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  border-radius: 7%;
+}
+
+.form button{
+  width: 20%;
+  margin: 0 auto;
+  background-color: #c1c7ca;
+}
+
+.form input{
+  margin-left: 1rem;
+}
+
+/*Friends Component */
+
+.friends-image{ 
+  background-image: url('https://images.pexels.com/photos/5515956/pexels-photo-5515956.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  height: 100%;
 }
 
 .friend{
-  color:white;
+  color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    width: 45%;
+    margin: 0.9rem 0.3rem;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*NewFriend Component */
+.newFriendDiv{
+  background-color: rgba(162, 132, 218, 1);
+  padding: 10rem 15rem;
+  color: white;
+  height: 95vh;
+}
+
+.newFriendDiv h1{
+  font-size: 3rem;
+}
+
+.friendForm{
+  margin: 0px 5rem;
+  background: rgb(0,0,0, 0.5);
+  padding: 3rem;
+  height: 65%;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 2rem;
-  width:50%;
-  display: inline-block;
+  flex-flow: column;
+  justify-content: space-between;
+  border-radius: 7%;
+}
+
+.friendForm button{
+  width: 20%;
+  margin: 0 auto;
+  background-color: #c1c7ca;
+}
+
+.friendForm input{
+  margin-left: 1rem;
 }

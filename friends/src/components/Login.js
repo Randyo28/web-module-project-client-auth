@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios'
+import axios from 'axios';
 
 function Login(props) {
 
@@ -10,7 +10,6 @@ function Login(props) {
 
     const handleChange = (e) => {
         const {name, value} = e.target
-
         setCredentials({...credentials, [name]: value})
     }
     
@@ -21,7 +20,7 @@ function Login(props) {
         .post('http://LocalHost:5000/api/login', credentials)
         .then(res => {
             localStorage.setItem('token', res.data.payload);
-            props.history.push('/friends');
+            props.history.push('/protected');
             console.log(res)
         })
         .catch(err => {
@@ -33,7 +32,7 @@ function Login(props) {
         <>
         <div className='loginDiv'>
         <h1>Login</h1>
-            <form onSubmit={login}>
+            <form className='form' onSubmit={login}>
                 <label> UserName:
                     <input type='text' 
                     name='username' 
