@@ -1,38 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Prompt|Roboto');
+
+
+
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  font-family: 'Roboto', sans-serif;
   text-align: center;
+  /* padding-bottom: 36px; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+  margin: 0 0 0;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+li {
+  list-style: none;
+  margin-right: 6px;
+  color: #204963;
+}
+
+a {
+  text-decoration: none;
+  padding: 6px;
+  color: #204963;
+  margin-right:1rem ;
+}
+
+.home-image{
+  background-image: url('https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  height: 100vh;
+}
+
+.home-image h1{
+  display: inline-block;
+  color: white;
+  margin-top: 15rem;
+}
+
+.friends-image{ 
+  background-image: url('https://images.pexels.com/photos/5515956/pexels-photo-5515956.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  height: 100%;
+}
+
+/*Header Component */
+.headerDiv{
+  background-color: #92c8cc;
+}
+
+.loginDiv{
+  background-color: rgba(0,0,0,0.7);
+  padding: 10rem 15rem;
+  margin: 0 25rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.friend{
+  color:white;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  width:50%;
+  display: inline-block;
 }
